@@ -5,7 +5,6 @@
 
 //create list item
 const newList = document.getElementById('newlist'); // get:ID='newlist'
-console.log(newList);
 const listItem = document.createElement('li'); // create<li></li>
 const newContent =  listItem.textContent = 'これです' // add:text -> これです
 newList.insertBefore(listItem , null); 
