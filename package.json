@@ -1,0 +1,22 @@
+{
+  "name": "frontendhandson",
+  "version": "1.0.0",
+  "description": "learn JavaScript at mori-ken-jyuku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megusasuke0/frontendhandson.git"
+  },
+  "keywords": [
+    "frontendhandson"
+  ],
+  "author": "sato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megusasuke0/frontendhandson/issues"
+  },
+  "homepage": "https://github.com/megusasuke0/frontendhandson#readme"
+}
