@@ -7,4 +7,4 @@
 const newList = document.getElementById('newlist'); // get:ID='newlist'
 const listItem = document.createElement('li'); // create<li></li>
 const newContent =  listItem.textContent = 'これです' // add:text -> これです
-newList.insertBefore(listItem , null); 
+newList.appendChild(listItem);
