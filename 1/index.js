@@ -6,5 +6,5 @@
 //create list item
 const newList = document.getElementById('js-newlist'); // get:ID='newlist'
 const listItem = document.createElement('li'); // create<li></li>
-const newContent =  listItem.textContent = 'これです' // add:text -> これです
+listItem.textContent = 'これです' // add:text -> これです
 newList.appendChild(listItem);
