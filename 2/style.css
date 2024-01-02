@@ -1,0 +1,23 @@
+li {
+  display: grid;
+  width: 100px;
+  text-align: center;
+  list-style: none;
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .3s;
+}
+
+li a:hover {
+  transform: translateY(-10px);
+  transition: ease .3s;
+}
+
+li img {
+  width: 100px;
+  height: 100px;
+}
