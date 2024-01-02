@@ -1,22 +1,27 @@
 {
   "name": "frontendhandson",
-  "version": "1.0.0",
-  "description": "learn JavaScript at mori-ken-jyuku",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/megusasuke0/frontendhandson.git"
+  "devDependencies": {
+    "vite": "^5.0.8"
   },
-  "keywords": [
-    "frontendhandson"
-  ],
+  "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-qv9fjr)",
+  "main": "main.js",
+  "dependencies": {
+    "esbuild": "^0.19.11",
+    "fsevents": "^2.3.3",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.32",
+    "rollup": "^4.9.2",
+    "source-map-js": "^1.0.2"
+  },
   "author": "sato",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/megusasuke0/frontendhandson/issues"
-  },
-  "homepage": "https://github.com/megusasuke0/frontendhandson#readme"
+  "license": "ISC"
 }
