@@ -4,7 +4,7 @@
 //reference:https://stackoverflow.com/questions/50250214/how-to-use-insertbefore-without-second-parameter
 
 //create list item
-const newList = document.getElementById('js-list'); // get:ID='newlist'
+const jsList = document.getElementById('js-list'); // get:ID='js-list'
 const listItem = document.createElement('li'); // create<li></li>
 listItem.textContent = 'これです' // add:text -> これです
-newList.appendChild(listItem);
+jsList.appendChild(listItem);
