@@ -1,0 +1,27 @@
+{
+  "name": "frontendhandson",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-qv9fjr)",
+  "main": "main.js",
+  "dependencies": {
+    "esbuild": "^0.19.11",
+    "fsevents": "^2.3.3",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.32",
+    "rollup": "^4.9.2",
+    "source-map-js": "^1.0.2"
+  },
+  "author": "sato",
+  "license": "ISC"
+}
