@@ -1,10 +1,18 @@
-//lesson01--------------------------------------------------
-//chatGPT prompt："javascript DOM作成 li テキスト「これです」"
-//reference:https://www.wakuwakubank.com/posts/306-javascript-dom/#index_id4
-//reference:https://stackoverflow.com/questions/50250214/how-to-use-insertbefore-without-second-parameter
+//lesson02--------------------------------------------------
+//chatGPT prompt："javascript DOM作成 li aタグにテキスト挿入「これです」 aタグの中にimgタグ"
+//reference:https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
+//reference:https://developer.mozilla.org/ja/docs/Web/API/Element/insertAdjacentElement
 
 //create list item
-const List = document.getElementById('js-list'); // get:ID='js-list'
+const createList = document.getElementById('js-list'); // get:ID='js-list'
 const listItem = document.createElement('li'); // create<li></li>
-listItem.textContent = 'これです' // add:text -> これです
-List.appendChild(listItem);
+const listItemLink = document.createElement('a'); //create<a></a>
+const listItemLinkImg = document.createElement('img'); //create<img>
+
+listItemLink.href = "1.html";//add:linkURL
+listItemLink.textContent = 'これです' ;
+listItemLinkImg.src = "image/bookmark.png";//add:img -> src
+listItemLinkImg.alt = "ブックマーク";//add:img -> alt
+listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);//insertAdjacentElement:引数で要素のポジション指定可能
+
+createList.appendChild(listItem).appendChild(listItemLink);//入れ子構造
