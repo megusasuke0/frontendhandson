@@ -11,6 +11,6 @@ const listItemLinkImg = document.createElement('img'); //create<img>
 listItemLink.href = "1.html";//add:linkURL
 listItemLinkImg.src = "image/bookmark.png";//add:img -> src
 listItemLinkImg.alt = "ブックマーク";//add:img -> alt
-listItemLink.appendChild(listItemLinkImg).textContent = 'これです' // add:text -> これです
+listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg).textContent = 'これです' //insertAdjacentElement:引数で要素のポジション指定可能
 
 createList.appendChild(listItem).appendChild(listItemLink);//入れ子構造の方法
