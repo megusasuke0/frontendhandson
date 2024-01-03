@@ -15,7 +15,6 @@
   "main": "main.js",
   "dependencies": {
     "esbuild": "^0.19.11",
-    "fsevents": "^2.3.3",
     "nanoid": "^3.3.7",
     "picocolors": "^1.0.0",
     "postcss": "^8.4.32",
