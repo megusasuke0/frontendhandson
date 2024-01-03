@@ -9,10 +9,8 @@ const listItemLink = document.createElement('a'); //create<a></a>
 const listItemLinkImg = document.createElement('img'); //create<img>
 
 listItemLink.href = "1.html";//add:linkURL
-listItemLink.textContent = 'これです' // add:text -> これです
 listItemLinkImg.src = "image/bookmark.png";//add:img -> src
 listItemLinkImg.alt = "ブックマーク";//add:img -> alt
+listItemLink.textContent = 'これです' // add:text -> これです
 
-listItemLink.appendChild(listItemLinkImg);
-listItem.appendChild(listItemLink);
-createList.appendChild(listItem);
+createList.appendChild(listItem).appendChild(listItemLinkImg).appendChild(listItemLink);//入れ子構造の方法
