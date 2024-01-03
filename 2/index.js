@@ -3,7 +3,7 @@
 //reference:https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
 
 //create list item
-const List = document.getElementById('js-list'); // get:ID='js-list'
+const createList = document.getElementById('js-list'); // get:ID='js-list'
 const listItem = document.createElement('li'); // create<li></li>
 const listItemLink = document.createElement('a'); //create<a></a>
 const listItemLinkImg = document.createElement('img'); //create<img>
@@ -15,4 +15,4 @@ listItemLinkImg.alt = "ブックマーク";//add:img -> alt
 
 listItemLink.appendChild(listItemLinkImg);
 listItem.appendChild(listItemLink);
-List.appendChild(listItem);
+createList.appendChild(listItem);
