@@ -1,15 +1,23 @@
 //lesson03--------------------------------------------------
+//chatGPT prompt："javascript DOM作成 li aタグにテキスト挿入「これです」 aタグの中にimgタグ 繰り返し 配列"
+//reference:https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
+//reference:https://tech.mychma.com/javascript-moji/929/
 
 //create list item
-const createList = document.getElementById('js-list'); // get:ID='js-list'
-const listItem = document.createElement('li'); // create<li></li>
-const listItemLink = document.createElement('a'); //create<a></a>
-const listItemLinkImg = document.createElement('img'); //create<img>
+const createList = document.getElementById('js-list');
 
-listItemLink.href = "1.html";//add:linkURL
-listItemLink.textContent = 'これです' ;
-listItemLinkImg.src = "image/bookmark.png";//add:img -> src
-listItemLinkImg.alt = "ブックマーク";//add:img -> alt
-listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);//insertAdjacentElement:引数で要素のポジション指定可能
+const ListItemLinkUrl = [1,2];//配列
+const ListItemLinkImgName = ['bookmark','message'];
 
-createList.appendChild(listItem).appendChild(listItemLink);//入れ子構造
+for (let i = 0; i < ListItemLinkUrl.length; i++) { //for文でループさせる
+  const listItem = document.createElement('li');
+  const listItemLink = document.createElement('a');
+  const listItemLinkImg = document.createElement('img');
+
+  listItemLink.href = `${ListItemLinkUrl[i]}.html`;
+  listItemLink.textContent = `a.${ListItemLinkUrl[i]}` ;
+  listItemLinkImg.src = `image/${ListItemLinkImgName[i]}.png`;
+  listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);
+  listItem.appendChild(listItemLink);
+  createList.appendChild(listItem);
+}
