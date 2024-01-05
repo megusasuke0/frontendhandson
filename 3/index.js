@@ -5,16 +5,16 @@
 
 //create list item
 const createList = document.getElementById('js-list');
-const ListItemLinkImgName = ['bookmark','message'];
+const ListItemLinkImgNames = ['bookmark','message'];
 
-for (let i = 0; i < ListItemLinkImgName.length; i++) { //for文でループさせる
+for (let i = 0; i < ListItemLinkImgNames.length; i++) { //for文でループさせる
   const listItem = document.createElement('li');
   const listItemLink = document.createElement('a');
   const listItemLinkImg = document.createElement('img');
 
   listItemLink.href = `${i + 1}.html`;
   listItemLink.textContent = `a.${i + 1}` ;
-  listItemLinkImg.src = `image/${ListItemLinkImgName[i]}.png`;
+  listItemLinkImg.src = `image/${ListItemLinkImgNames[i]}.png`;
   listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);
   listItem.appendChild(listItemLink);
   createList.appendChild(listItem);
