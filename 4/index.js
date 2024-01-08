@@ -3,24 +3,24 @@
 //reference:https://qiita.com/yrn03m/items/87e223acc6e733b50429    (参考）連想配列
 
 //list item
-const items = document.getElementById('js-items');
-const arrayItems = [
+const listItems = document.getElementById('js-items');
+const items = [
   {to: "bookmark.html", img: "1.png", alt:"画像1", text: "ブックマーク"},
   {to: "message.html", img: "2.png", alt:"画像2", text: "メッセージ"}];
 const fragmentItem = document.createDocumentFragment();
 
-arrayItems.forEach(arrayItem => {
+items.forEach(Items => {
   const listItem = document.createElement('li');
   const listItemLink = document.createElement('a');
   const listItemLinkImg = document.createElement('img');
 
-  listItemLink.href = `/${arrayItem.to}`;
-  listItemLink.textContent = arrayItem.text ;
-  listItemLinkImg.src = `image/${arrayItem.img}`;
-  listItemLinkImg.alt = arrayItem.alt;
+  listItemLink.href = `/${Items.to}`;
+  listItemLink.textContent = Items.text ;
+  listItemLinkImg.src = `image/${Items.img}`;
+  listItemLinkImg.alt = Items.alt;
   listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);
   listItem.appendChild(listItemLink);
   fragmentItem.appendChild(listItem);
 });
 
-  items.appendChild(fragmentItem);
+listItems.appendChild(fragmentItem);
