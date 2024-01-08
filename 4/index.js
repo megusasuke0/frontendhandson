@@ -9,15 +9,15 @@ const items = [
   {to: "message.html", img: "2.png", alt:"画像2", text: "メッセージ"}];
 const fragmentItem = document.createDocumentFragment();
 
-items.forEach(Item => {
+items.forEach(item => {
   const listItem = document.createElement('li');
   const listItemLink = document.createElement('a');
   const listItemLinkImg = document.createElement('img');
 
-  listItemLink.href = `/${Item.to}`;
-  listItemLink.textContent = Item.text ;
-  listItemLinkImg.src = `image/${Item.img}`;
-  listItemLinkImg.alt = Item.alt;
+  listItemLink.href = `/${item.to}`;
+  listItemLink.textContent = item.text ;
+  listItemLinkImg.src = `image/${item.img}`;
+  listItemLinkImg.alt = item.alt;
   listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);
   listItem.appendChild(listItemLink);
   fragmentItem.appendChild(listItem);
