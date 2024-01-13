@@ -22,4 +22,6 @@ items.forEach(item => {
   fragmentItem.appendChild(listItem);
 });
 
-listItems.appendChild(fragmentItem);
+new Promise((resolve) => {
+  listItems.appendChild(fragmentItem);
+});
