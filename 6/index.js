@@ -8,7 +8,9 @@ const items = [
 const fragmentItem = document.createDocumentFragment();
 
 new Promise((resolve) => {
-  resolve(items);
+  setTimeout(() => {
+    resolve(items);
+    }, 3000);
   }).then((items)=>{
     items.forEach((item) => {
       const listItem = document.createElement('li');
