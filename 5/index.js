@@ -10,15 +10,15 @@ const fragmentItem = document.createDocumentFragment();
 new Promise((resolve) => {
   resolve(items);
   }).then((items)=>{
-    items.forEach((items) => {
+    items.forEach((item) => {
       const listItem = document.createElement('li');
       const listItemLink = document.createElement('a');
       const listItemLinkImg = document.createElement('img');
 
-      listItemLink.href = `/${items.to}`;
-      listItemLink.textContent = items.text ;
-      listItemLinkImg.src = `image/${items.img}`;
-      listItemLinkImg.alt = items.alt;
+      listItemLink.href = `/${item.to}`;
+      listItemLink.textContent = item.text ;
+      listItemLinkImg.src = `image/${item.img}`;
+      listItemLinkImg.alt = item.alt;
       listItemLink.insertAdjacentElement('afterbegin',listItemLinkImg);
       listItem.appendChild(listItemLink);
       fragmentItem.appendChild(listItem);
